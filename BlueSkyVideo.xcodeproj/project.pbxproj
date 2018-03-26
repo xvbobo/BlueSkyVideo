@@ -7,15 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CEA4A7DD766F72216DC6927 /* libPods-BlueSkyVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2EE53DED0D8D3A096FFDEF /* libPods-BlueSkyVideo.a */; };
 		9A0221501FBD87D80078CB31 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A02214F1FBD87D80078CB31 /* AppDelegate.m */; };
 		9A0221531FBD87D80078CB31 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0221521FBD87D80078CB31 /* ViewController.m */; };
 		9A0221561FBD87D80078CB31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0221541FBD87D80078CB31 /* Main.storyboard */; };
 		9A0221581FBD87D80078CB31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0221571FBD87D80078CB31 /* Assets.xcassets */; };
 		9A02215B1FBD87D80078CB31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0221591FBD87D80078CB31 /* LaunchScreen.storyboard */; };
 		9A02215E1FBD87D80078CB31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A02215D1FBD87D80078CB31 /* main.m */; };
+		9A09A2FD2061FB0700CFFC0F /* SortMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A09A2FC2061FB0700CFFC0F /* SortMethodViewController.m */; };
+		9A32F37F2058B89400B17D82 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32F37E2058B89400B17D82 /* BaseNavigationController.m */; };
+		9A32F3822058BAFB00B17D82 /* SessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32F3812058BAFB00B17D82 /* SessionViewController.m */; };
+		9A32F3862058C13400B17D82 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32F3852058C13400B17D82 /* MapViewController.m */; };
+		9A32F38A2058C8B800B17D82 /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32F3882058C8B800B17D82 /* BaseCell.m */; };
+		9A32F38B2058C8B800B17D82 /* BaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A32F3892058C8B800B17D82 /* BaseCell.xib */; };
+		9A32F38F20590F8100B17D82 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32F38E20590F8100B17D82 /* RootViewController.m */; };
+		9A32F392205910D000B17D82 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32F391205910D000B17D82 /* GCDViewController.m */; };
+		9A3424CA2064A0B10078623C /* KVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3424C92064A0B10078623C /* KVCViewController.m */; };
+		9A3424CD2064A47B0078623C /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3424CC2064A47B0078623C /* PersonModel.m */; };
+		9A3424D12065072F0078623C /* EncryptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3424D02065072F0078623C /* EncryptionViewController.m */; };
+		9A3D70B420662FD1001A3743 /* XVEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3D70B320662FD1001A3743 /* XVEncryption.m */; };
+		9A3D70B720663228001A3743 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3D70B620663228001A3743 /* NSData+AES.m */; };
+		9A3D70BA20667272001A3743 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3D70B920667272001A3743 /* NSString+Base64.m */; };
+		9A3D70BD20688B93001A3743 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3D70BC20688B93001A3743 /* NSString+MD5.m */; };
+		9A56D79E1FBEAB810063CFDB /* VideoDownLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A56D79D1FBEAB800063CFDB /* VideoDownLoad.m */; };
+		9A56D7A11FBEDC0B0063CFDB /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A56D7A01FBEDC0B0063CFDB /* VideoViewController.m */; };
+		9A56D7A41FBEDC510063CFDB /* MyVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A56D7A31FBEDC510063CFDB /* MyVideoViewController.m */; };
+		9A9A9EBA20452C7100892C4E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A9EB920452C7100892C4E /* BaseViewController.m */; };
+		9A9A9EBD20452CBB00892C4E /* NetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A9EBC20452CBB00892C4E /* NetWorking.m */; };
+		9A9A9EC3204538AB00892C4E /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A9EC2204538AB00892C4E /* BaseModel.m */; };
+		9A9A9EC620453C3300892C4E /* TopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A9EC520453C3300892C4E /* TopicModel.m */; };
+		9A9A9EC9204561FE00892C4E /* userModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A9EC8204561FE00892C4E /* userModel.m */; };
+		9A9A9ECF2045686500892C4E /* TopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A9ECE2045686500892C4E /* TopicCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5AE4FB16DEA39261D1322718 /* Pods-BlueSkyVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueSkyVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueSkyVideo/Pods-BlueSkyVideo.debug.xcconfig"; sourceTree = "<group>"; };
+		89BCA023FA46883D5AC57397 /* Pods-BlueSkyVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueSkyVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueSkyVideo/Pods-BlueSkyVideo.release.xcconfig"; sourceTree = "<group>"; };
+		8A2EE53DED0D8D3A096FFDEF /* libPods-BlueSkyVideo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlueSkyVideo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A02214B1FBD87D80078CB31 /* BlueSkyVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueSkyVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A02214E1FBD87D80078CB31 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9A02214F1FBD87D80078CB31 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +54,53 @@
 		9A02215A1FBD87D80078CB31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A02215C1FBD87D80078CB31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A02215D1FBD87D80078CB31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9A09A2FB2061FB0700CFFC0F /* SortMethodViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortMethodViewController.h; sourceTree = "<group>"; };
+		9A09A2FC2061FB0700CFFC0F /* SortMethodViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortMethodViewController.m; sourceTree = "<group>"; };
+		9A32F37D2058B89400B17D82 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		9A32F37E2058B89400B17D82 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		9A32F3802058BAFB00B17D82 /* SessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionViewController.h; sourceTree = "<group>"; };
+		9A32F3812058BAFB00B17D82 /* SessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SessionViewController.m; sourceTree = "<group>"; };
+		9A32F3842058C13400B17D82 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		9A32F3852058C13400B17D82 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		9A32F3872058C8B800B17D82 /* BaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
+		9A32F3882058C8B800B17D82 /* BaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
+		9A32F3892058C8B800B17D82 /* BaseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseCell.xib; sourceTree = "<group>"; };
+		9A32F38D20590F8100B17D82 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		9A32F38E20590F8100B17D82 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		9A32F390205910D000B17D82 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		9A32F391205910D000B17D82 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		9A3424C82064A0B10078623C /* KVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCViewController.h; sourceTree = "<group>"; };
+		9A3424C92064A0B10078623C /* KVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCViewController.m; sourceTree = "<group>"; };
+		9A3424CB2064A47B0078623C /* PersonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
+		9A3424CC2064A47B0078623C /* PersonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
+		9A3424CF2065072F0078623C /* EncryptionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EncryptionViewController.h; sourceTree = "<group>"; };
+		9A3424D02065072F0078623C /* EncryptionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncryptionViewController.m; sourceTree = "<group>"; };
+		9A3D70B220662FD1001A3743 /* XVEncryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XVEncryption.h; sourceTree = "<group>"; };
+		9A3D70B320662FD1001A3743 /* XVEncryption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XVEncryption.m; sourceTree = "<group>"; };
+		9A3D70B520663228001A3743 /* NSData+AES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
+		9A3D70B620663228001A3743 /* NSData+AES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
+		9A3D70B820667272001A3743 /* NSString+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		9A3D70B920667272001A3743 /* NSString+Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		9A3D70BB20688B93001A3743 /* NSString+MD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		9A3D70BC20688B93001A3743 /* NSString+MD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		9A56D79C1FBEAB800063CFDB /* VideoDownLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoDownLoad.h; sourceTree = "<group>"; };
+		9A56D79D1FBEAB800063CFDB /* VideoDownLoad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoDownLoad.m; sourceTree = "<group>"; };
+		9A56D79F1FBEDC0B0063CFDB /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		9A56D7A01FBEDC0B0063CFDB /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		9A56D7A21FBEDC510063CFDB /* MyVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyVideoViewController.h; sourceTree = "<group>"; };
+		9A56D7A31FBEDC510063CFDB /* MyVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyVideoViewController.m; sourceTree = "<group>"; };
+		9A9A9EB820452C7100892C4E /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		9A9A9EB920452C7100892C4E /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		9A9A9EBB20452CBB00892C4E /* NetWorking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorking.h; sourceTree = "<group>"; };
+		9A9A9EBC20452CBB00892C4E /* NetWorking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorking.m; sourceTree = "<group>"; };
+		9A9A9EC1204538AB00892C4E /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		9A9A9EC2204538AB00892C4E /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		9A9A9EC420453C3300892C4E /* TopicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopicModel.h; sourceTree = "<group>"; };
+		9A9A9EC520453C3300892C4E /* TopicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopicModel.m; sourceTree = "<group>"; };
+		9A9A9EC7204561FD00892C4E /* userModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = userModel.h; sourceTree = "<group>"; };
+		9A9A9EC8204561FE00892C4E /* userModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = userModel.m; sourceTree = "<group>"; };
+		9A9A9ECD2045686500892C4E /* TopicCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopicCell.h; sourceTree = "<group>"; };
+		9A9A9ECE2045686500892C4E /* TopicCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopicCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +108,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CEA4A7DD766F72216DC6927 /* libPods-BlueSkyVideo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F6D75899223F5B95376A47B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A2EE53DED0D8D3A096FFDEF /* libPods-BlueSkyVideo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D1D7DE1D7D34097FF44CE9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AE4FB16DEA39261D1322718 /* Pods-BlueSkyVideo.debug.xcconfig */,
+				89BCA023FA46883D5AC57397 /* Pods-BlueSkyVideo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9A0221421FBD87D80078CB31 = {
 			isa = PBXGroup;
 			children = (
 				9A02214D1FBD87D80078CB31 /* BlueSkyVideo */,
 				9A02214C1FBD87D80078CB31 /* Products */,
+				8D1D7DE1D7D34097FF44CE9F /* Pods */,
+				2F6D75899223F5B95376A47B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +153,14 @@
 		9A02214D1FBD87D80078CB31 /* BlueSkyVideo */ = {
 			isa = PBXGroup;
 			children = (
+				9A3424CE206507050078623C /* Encryption（加密） */,
+				9A3424C720649EFF0078623C /* KVCANDKVO */,
+				9A09A2FA2061FAE100CFFC0F /* SortMethod */,
+				9A32F38C20590D6F00B17D82 /* GCD */,
+				9A32F3832058C11D00B17D82 /* MaP */,
+				9A32F37C2058B82600B17D82 /* BaseViewController */,
+				9A32F37B2058B7E400B17D82 /* TableView */,
+				9A32F37A2058B77700B17D82 /* Video */,
 				9A02214E1FBD87D80078CB31 /* AppDelegate.h */,
 				9A02214F1FBD87D80078CB31 /* AppDelegate.m */,
 				9A0221511FBD87D80078CB31 /* ViewController.h */,
@@ -71,6 +174,109 @@
 			path = BlueSkyVideo;
 			sourceTree = "<group>";
 		};
+		9A09A2FA2061FAE100CFFC0F /* SortMethod */ = {
+			isa = PBXGroup;
+			children = (
+				9A09A2FB2061FB0700CFFC0F /* SortMethodViewController.h */,
+				9A09A2FC2061FB0700CFFC0F /* SortMethodViewController.m */,
+			);
+			path = SortMethod;
+			sourceTree = "<group>";
+		};
+		9A32F37A2058B77700B17D82 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				9A56D79F1FBEDC0B0063CFDB /* VideoViewController.h */,
+				9A56D7A01FBEDC0B0063CFDB /* VideoViewController.m */,
+				9A56D7A21FBEDC510063CFDB /* MyVideoViewController.h */,
+				9A56D7A31FBEDC510063CFDB /* MyVideoViewController.m */,
+				9A56D79C1FBEAB800063CFDB /* VideoDownLoad.h */,
+				9A56D79D1FBEAB800063CFDB /* VideoDownLoad.m */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		9A32F37B2058B7E400B17D82 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				9A32F3802058BAFB00B17D82 /* SessionViewController.h */,
+				9A32F3812058BAFB00B17D82 /* SessionViewController.m */,
+				9A9A9ECD2045686500892C4E /* TopicCell.h */,
+				9A9A9ECE2045686500892C4E /* TopicCell.m */,
+				9A9A9EBB20452CBB00892C4E /* NetWorking.h */,
+				9A9A9EBC20452CBB00892C4E /* NetWorking.m */,
+				9A9A9EC1204538AB00892C4E /* BaseModel.h */,
+				9A9A9EC2204538AB00892C4E /* BaseModel.m */,
+				9A9A9EC420453C3300892C4E /* TopicModel.h */,
+				9A9A9EC520453C3300892C4E /* TopicModel.m */,
+				9A9A9EC7204561FD00892C4E /* userModel.h */,
+				9A9A9EC8204561FE00892C4E /* userModel.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		9A32F37C2058B82600B17D82 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9A32F37D2058B89400B17D82 /* BaseNavigationController.h */,
+				9A32F37E2058B89400B17D82 /* BaseNavigationController.m */,
+				9A9A9EB820452C7100892C4E /* BaseViewController.h */,
+				9A9A9EB920452C7100892C4E /* BaseViewController.m */,
+				9A32F38D20590F8100B17D82 /* RootViewController.h */,
+				9A32F38E20590F8100B17D82 /* RootViewController.m */,
+				9A32F3872058C8B800B17D82 /* BaseCell.h */,
+				9A32F3882058C8B800B17D82 /* BaseCell.m */,
+				9A32F3892058C8B800B17D82 /* BaseCell.xib */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		9A32F3832058C11D00B17D82 /* MaP */ = {
+			isa = PBXGroup;
+			children = (
+				9A32F3842058C13400B17D82 /* MapViewController.h */,
+				9A32F3852058C13400B17D82 /* MapViewController.m */,
+			);
+			path = MaP;
+			sourceTree = "<group>";
+		};
+		9A32F38C20590D6F00B17D82 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				9A32F390205910D000B17D82 /* GCDViewController.h */,
+				9A32F391205910D000B17D82 /* GCDViewController.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		9A3424C720649EFF0078623C /* KVCANDKVO */ = {
+			isa = PBXGroup;
+			children = (
+				9A3424C82064A0B10078623C /* KVCViewController.h */,
+				9A3424C92064A0B10078623C /* KVCViewController.m */,
+				9A3424CB2064A47B0078623C /* PersonModel.h */,
+				9A3424CC2064A47B0078623C /* PersonModel.m */,
+			);
+			path = KVCANDKVO;
+			sourceTree = "<group>";
+		};
+		9A3424CE206507050078623C /* Encryption（加密） */ = {
+			isa = PBXGroup;
+			children = (
+				9A3424CF2065072F0078623C /* EncryptionViewController.h */,
+				9A3424D02065072F0078623C /* EncryptionViewController.m */,
+				9A3D70B520663228001A3743 /* NSData+AES.h */,
+				9A3D70B620663228001A3743 /* NSData+AES.m */,
+				9A3D70B820667272001A3743 /* NSString+Base64.h */,
+				9A3D70B920667272001A3743 /* NSString+Base64.m */,
+				9A3D70BB20688B93001A3743 /* NSString+MD5.h */,
+				9A3D70BC20688B93001A3743 /* NSString+MD5.m */,
+				9A3D70B220662FD1001A3743 /* XVEncryption.h */,
+				9A3D70B320662FD1001A3743 /* XVEncryption.m */,
+			);
+			path = "Encryption（加密）";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +284,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A0221611FBD87D80078CB31 /* Build configuration list for PBXNativeTarget "BlueSkyVideo" */;
 			buildPhases = (
+				559899CBA858459C5BC9F0A4 /* [CP] Check Pods Manifest.lock */,
 				9A0221471FBD87D80078CB31 /* Sources */,
 				9A0221481FBD87D80078CB31 /* Frameworks */,
 				9A0221491FBD87D80078CB31 /* Resources */,
+				849BAA12E4D8121A5A1BCAB0 /* [CP] Embed Pods Frameworks */,
+				B4FE85F639BFF3EBE45C6D26 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A32F38B2058C8B800B17D82 /* BaseCell.xib in Resources */,
 				9A02215B1FBD87D80078CB31 /* LaunchScreen.storyboard in Resources */,
 				9A0221581FBD87D80078CB31 /* Assets.xcassets in Resources */,
 				9A0221561FBD87D80078CB31 /* Main.storyboard in Resources */,
@@ -137,14 +347,85 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		559899CBA858459C5BC9F0A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		849BAA12E4D8121A5A1BCAB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlueSkyVideo/Pods-BlueSkyVideo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4FE85F639BFF3EBE45C6D26 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlueSkyVideo/Pods-BlueSkyVideo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9A0221471FBD87D80078CB31 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A32F38A2058C8B800B17D82 /* BaseCell.m in Sources */,
+				9A32F392205910D000B17D82 /* GCDViewController.m in Sources */,
+				9A3D70B420662FD1001A3743 /* XVEncryption.m in Sources */,
+				9A56D7A11FBEDC0B0063CFDB /* VideoViewController.m in Sources */,
 				9A0221531FBD87D80078CB31 /* ViewController.m in Sources */,
+				9A56D79E1FBEAB810063CFDB /* VideoDownLoad.m in Sources */,
+				9A3424CA2064A0B10078623C /* KVCViewController.m in Sources */,
+				9A3424CD2064A47B0078623C /* PersonModel.m in Sources */,
+				9A3424D12065072F0078623C /* EncryptionViewController.m in Sources */,
+				9A3D70BA20667272001A3743 /* NSString+Base64.m in Sources */,
 				9A02215E1FBD87D80078CB31 /* main.m in Sources */,
+				9A56D7A41FBEDC510063CFDB /* MyVideoViewController.m in Sources */,
+				9A9A9EC620453C3300892C4E /* TopicModel.m in Sources */,
+				9A32F37F2058B89400B17D82 /* BaseNavigationController.m in Sources */,
+				9A9A9EBA20452C7100892C4E /* BaseViewController.m in Sources */,
+				9A3D70B720663228001A3743 /* NSData+AES.m in Sources */,
 				9A0221501FBD87D80078CB31 /* AppDelegate.m in Sources */,
+				9A32F3822058BAFB00B17D82 /* SessionViewController.m in Sources */,
+				9A9A9EC9204561FE00892C4E /* userModel.m in Sources */,
+				9A32F38F20590F8100B17D82 /* RootViewController.m in Sources */,
+				9A3D70BD20688B93001A3743 /* NSString+MD5.m in Sources */,
+				9A9A9EC3204538AB00892C4E /* BaseModel.m in Sources */,
+				9A09A2FD2061FB0700CFFC0F /* SortMethodViewController.m in Sources */,
+				9A32F3862058C13400B17D82 /* MapViewController.m in Sources */,
+				9A9A9EBD20452CBB00892C4E /* NetWorking.m in Sources */,
+				9A9A9ECF2045686500892C4E /* TopicCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +557,7 @@
 		};
 		9A0221621FBD87D80078CB31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AE4FB16DEA39261D1322718 /* Pods-BlueSkyVideo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +572,7 @@
 		};
 		9A0221631FBD87D80078CB31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89BCA023FA46883D5AC57397 /* Pods-BlueSkyVideo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

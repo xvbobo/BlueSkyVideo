@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "VideoDownLoad.h"
 @interface ViewController ()
 
 @end
@@ -15,7 +15,9 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    NSString * sting = @"qwq";
     [super viewDidLoad];
+//    [[VideoDownLoad shareInstance] downLoadVideo:@""];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
