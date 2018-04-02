@@ -11,6 +11,7 @@
 @interface SortMethodViewController ()
 @property (nonatomic,strong) NSMutableArray * dataArray;
 @property (nonatomic,copy) NSString * name;
+@property (nonatomic,assign) NSInteger index;
 @end
 
 @implementation SortMethodViewController
@@ -27,29 +28,53 @@
 //    [self createMethod4];//合并排序
 
     // Do any additional setup after loading the view.
+    NSMutableArray * array = [NSMutableArray arrayWithObjects:@1,@2,@3,@4,@5,@6,@7,@8,@9, nil];
+    _index = 0;
+  NSInteger a =   [self searchNumberFromArray:array andNumber:6 leftIndex:0 rightIndex:array.count - 1];
+    NSLog(@"%ld",a);
+    
 }
+#pragma mark -- 二分查找（必须是有序的数组，如果不是有序的数组先要对数组进行排序）
 
+/****
+ 1，先定义一个左侧的下标left(0)和右侧的下标right（array.count - 1）以中间数为基准：5，用要查的的数字（6）和中间的数（5）来比较，如果查找的数字大于中间的数字，说明查找的数字在中间数字的右边，这时候左侧下标就可以等于left = mid（中间数的下标） +1，如果查找的数字小于中间的数字，说明查找的数字在中间数字的左边，这时候右侧下标就可以等于right = mid（中间数的下标） -1，如果查找的数字等于中间的数字，那么此时mid的值就是你要查找数字的下标
+ ***/
+- (NSInteger)searchNumberFromArray:(NSArray *)array andNumber:(NSInteger)numer leftIndex:(NSInteger)left rightIndex:(NSInteger)right{
 
+    NSInteger mid;
+    while (left <= right) {
+        mid = (left + right)/2;
+        if (numer < [array[mid] integerValue]) {
+            right = mid -1;
+        }else if (numer > [array[mid] integerValue]){
+            left = mid + 1;
+        }else{
+            return mid;
+        }
+    }
+    return 0;
+    
+}
 #pragma mark -- 插入排序
 //将一个记录插入到已排序好的有序表中，从而得到一个新，记录数增1的有序表。即：先将序列的第1个记录看成是一个有序的子序列，然后从第2个记录逐个进行插入，直至整个序列有序为止。
 //要点：设立哨兵，作为临时存储和判断数组边界之用。
-- (void)createMethod{
-    for (int i = 1; i < _dataArray.count; i ++) {
-        if (_dataArray[i] < _dataArray[i-1]) {
-            int j = i - 1;
-            int x = [_dataArray[i] intValue];//复制为哨兵，即存储待排序元素
-            _dataArray[i] = _dataArray[i-1]; //先后移一个元素
-            while (x < [_dataArray[j] intValue]) {//查找在有序表的插入位置
-                _dataArray[j + 1] = _dataArray[j];
-                j --;//元素后移
-            }
-            _dataArray[j + 1] = @(x);//插入到正确位置
-        }
-        NSLog(@"%@",_dataArray); //打印每趟排序的结果
-    }
-    NSLog(@"%@",_dataArray);
-
-}
+//- (void)createMethod{
+//    for (int i = 1; i < _dataArray.count; i ++) {
+//        if (_dataArray[i] < _dataArray[i-1]) {
+//            int j = i - 1;
+//            int x = [_dataArray[i] intValue];//复制为哨兵，即存储待排序元素
+//            _dataArray[i] = _dataArray[i-1]; //先后移一个元素
+//            while (x < [_dataArray[j] intValue]) {//查找在有序表的插入位置
+//                _dataArray[j + 1] = _dataArray[j];
+//                j --;//元素后移
+//            }
+//            _dataArray[j + 1] = @(x);//插入到正确位置
+//        }
+//        NSLog(@"%@",_dataArray); //打印每趟排序的结果
+//    }
+//    NSLog(@"%@",_dataArray);
+//
+//}
 #pragma mark -- 选择排序
 //在要排序的一组数中，选出最小（或者最大）的一个数与第1个位置的数交换；然后在剩下的数当中再找最小（或者最大）的与第2个位置的数交换，依次类推，直到第n-1个元素（倒数第二个数）和第n个元素（最后一个数）比较为止。
 - (void)createMethod1{
@@ -162,7 +187,15 @@
             b ++;
 
         }
+        /***
+         (1) A3:1 ,b = 1,a=0;
+         (2) A3:1,2  , b = 1, a=1;
+         (3) A3:1,2,4, b = 2, a=1;
+         (4) A3:1,2,4,8 b = 2, a= 2;
+         (5) A3:1,2,4,8,10  b = 3, a = 2 ,因为此时b = 3，不小于A2.count，所以跳出遍历
+         **/
     }
+    //    此时a = 2，A1[a] = 20；此时遍历后A3:1,2,4,8,10,20  a = 3,跳出遍历
     while (a < A1.count) {
         [A3 addObject:A1[a]];
         a ++;

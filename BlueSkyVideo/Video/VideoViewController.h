@@ -6,8 +6,8 @@
 //  Copyright © 2017年 许菠菠. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "BaseViewController.h"
 
-@interface VideoViewController : ViewController
+@interface VideoViewController : BaseViewController
 
 @end

@@ -8,7 +8,7 @@
 
 #import "VideoViewController.h"
 #import <AVKit/AVKit.h>
-
+#import "KxMovieViewController.h"
 @interface VideoViewController ()
 @property (nonatomic,strong) AVPlayer * player;
 @property (nonatomic,assign) NSTimeInterval total;
@@ -42,18 +42,32 @@
 //http://mvideo.spriteapp.cn/video/2017/1204/5a24a19d2ab46_wpcco.mp4
 //http://mvideo.spriteapp.cn/video/2017/1204/91bd56f0-d90b-11e7-befc-1866daeb0df1_wpcco.mp4
 
-    AVPlayerItem * playItem = [[AVPlayerItem alloc] initWithURL:[NSURL URLWithString:@"http://mvideo.spriteapp.cn/video/2017/1204/5a25262c63a12_wpcco.mp4"]];
-    [playItem addObserver:self forKeyPath:@"loadedTimeRanges" options:NSKeyValueObservingOptionNew context:nil];
-    [playItem addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
+//    AVPlayerItem * playItem = [[AVPlayerItem alloc] initWithURL:[NSURL URLWithString:@"http://mvideo.spriteapp.cn/video/2017/1204/5a25262c63a12_wpcco.mp4"]];
+//    [playItem addObserver:self forKeyPath:@"loadedTimeRanges" options:NSKeyValueObservingOptionNew context:nil];
+//    [playItem addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
+//
+//    self.player  = [[AVPlayer alloc] initWithPlayerItem:playItem];
+//    AVPlayerLayer * playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
+//    playerLayer.videoGravity = AVLayerVideoGravityResize;
+//    playerLayer.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width/3 * 2);
+//    UIView *playerView = [[UIView alloc] initWithFrame:CGRectMake(0, 20, CGRectGetWidth(playerLayer.frame), CGRectGetHeight(playerLayer.frame))];
+//    playerView.backgroundColor = [UIColor blackColor];
+//    [playerView.layer addSublayer:playerLayer];
+//    [self.view addSubview:playerView];
+    NSString *path = @"http://mvideo.spriteapp.cn/video/2017/1204/5a2538b6740a9_wpcco.mp4";
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     
-    self.player  = [[AVPlayer alloc] initWithPlayerItem:playItem];
-    AVPlayerLayer * playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
-    playerLayer.videoGravity = AVLayerVideoGravityResize;
-    playerLayer.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width/3 * 2);
-    UIView *playerView = [[UIView alloc] initWithFrame:CGRectMake(0, 20, CGRectGetWidth(playerLayer.frame), CGRectGetHeight(playerLayer.frame))];
-    playerView.backgroundColor = [UIColor blackColor];
-    [playerView.layer addSublayer:playerLayer];
-    [self.view addSubview:playerView];
+    // increase buffering for .wmv, it solves problem with delaying audio frames
+    if ([path.pathExtension isEqualToString:@"wmv"])
+        parameters[KxMovieParameterMinBufferedDuration] = @(5.0);
+    
+    // disable deinterlacing for iPhone, because it's complex operation can cause stuttering
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+        parameters[KxMovieParameterDisableDeinterlacing] = @(YES);
+    
+    KxMovieViewController *vc = [KxMovieViewController movieViewControllerWithContentPath:path
+                                                                               parameters:parameters];
+    [self presentViewController:vc animated:YES completion:nil];
     
 //    [self.player play];
     

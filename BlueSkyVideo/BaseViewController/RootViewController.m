@@ -12,7 +12,11 @@
 #import "SortMethodViewController.h"
 #import "KVCViewController.h"
 #import "EncryptionViewController.h"
+#import "RunTimeViewController.h"
+#import "VideoViewController.h"
 #import "BaseCell.h"
+//#include <stdio.h>
+
 @interface RootViewController()<UITableViewDelegate,UITableViewDataSource>{
     UITableView * baseTableViewController;
     NSArray * baseDataSoure;
@@ -21,15 +25,28 @@
 @end
 
 @implementation RootViewController
-
+void func(){
+    printf("%d",cgre(2013));
+}
+int cgre(int x) {
+    int countX = 0;
+    while (x) {
+        countX ++;
+        x = x & (x - 1);
+    }
+    return countX;
+}
 - (void)viewDidLoad {
+//    func();
     [super viewDidLoad];
-    baseDataSoure = @[@"地图",@"多线程",@"排序算法",@"KVC和KVO",@"加密算法"];
+    baseDataSoure = @[@"地图",@"多线程",@"排序算法",@"KVC和KVO",@"加密算法",@"RunTime",@"视频"];
     GCDViewController * vc = [[GCDViewController alloc] init];
     SortMethodViewController * vc2 = [[SortMethodViewController alloc] init];
     KVCViewController * vc3 = [[KVCViewController alloc] init];
     EncryptionViewController * vc4 = [[EncryptionViewController alloc] init];
-    viewControllers = @[[[MapViewController alloc] init],vc,vc2,vc3,vc4];
+    RunTimeViewController * vc5 = [[RunTimeViewController alloc] init];
+    VideoViewController * vc6 = [[VideoViewController alloc] init];
+    viewControllers = @[[[MapViewController alloc] init],vc,vc2,vc3,vc4,vc5,vc6];
     self.view.backgroundColor = [UIColor whiteColor];
     baseTableViewController = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     baseTableViewController.delegate = self;
